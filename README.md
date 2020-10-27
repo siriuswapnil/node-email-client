@@ -14,12 +14,7 @@ node-mailer is a Nodejs API that authenticates a user's profile through an OAuth
 5. To send email, the user needs to complete authentication. For that, navigate to /auth route. (http://localhost:4000/auth)
 6. Once the authentication is complete, the user receives a success message that tells him to navigate to /send endpoint, which allows to send email for authenticated users.
 7. Once the API receives a GET request to /send, a command line input stream is fired up, for the user to enter details for the Email message. During the process, the User's email ID is also requested from the Gmail API to be used as the FROM email in the email message.
-8. Once the user enters the parameters, and if everything is approved, the user is redirected to the API root endpoint. The details of the email message is visible on the console. 
-
-
-# References
- ### Gmail API Reference : [https://developers.google.com/gmail/api/reference/rest]
- ### OAuth 2.0 for Web Server Applications Guide : [https://developers.google.com/identity/protocols/oauth2/web-server#httprest_1] 
+8. Once the user enters the parameters, and if everything is approved, the user is redirected to the API root endpoint. The details of the email message is visible on the console.  
 
 # API Design : 
 
@@ -37,6 +32,6 @@ The User authentication follows an OAuth 2.0 workflow. OAuth is an authenticatio
 
 Once, we have the access key, it is sent alongside an HTTP Header in a POST request to a Gmail API endpoint. The body of the POST request contains the email message. The API requires the message body to be Base64 encoded in MIME format. Finally, if everything is approved, the message gets sent, and a JSON object containing metadata about the message is printed to the console. The user is redirected to the root endpoint for further action.
 
-
-## Error Handling
-
+# References
+ ### Gmail API Reference : [https://developers.google.com/gmail/api/reference/rest]
+ ### OAuth 2.0 for Web Server Applications Guide : [https://developers.google.com/identity/protocols/oauth2/web-server#httprest_1]
