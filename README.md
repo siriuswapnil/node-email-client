@@ -3,7 +3,7 @@ Nodejs API to send email from a user's account with Gmail API without using clie
 
 
 # About the Project
-node-mailer is a Nodejs API that authenticates a user's profile through an OAuth 2.0 flow to send email through the user's Gmail This application makes use of the Gmail API without involving the nodejs-client-library, officially supported by Google.
+node-email-client is a Nodejs API that authenticates a user's profile through an OAuth 2.0 flow to send email through the user's Gmail This application makes use of the Gmail API without involving the nodejs-client-library, officially supported by Google.
 
 # Setup Procedure and workflow
 
