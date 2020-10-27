@@ -16,8 +16,6 @@ routes.get('/auth-success', apiController.completeAuth);
 
 routes.get('/send', apiController.sendMail);
 
-routes.get('/send-success', (req,res) => {
-  res.send("Mail sent! Check Inbox!")
-})
+routes.get('/send-success', apiController.sendSuccess);
 
 module.exports = routes;
